@@ -1,0 +1,90 @@
+<html>
+  <head>
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .container_1 {
+            width: 100%; 
+            height: 33%; 
+            align-items: center; 
+            justify-content: center; 
+            color: white;
+            text-align: center;
+        }	
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </head>
+    <body> 
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Report</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#section_1">Owner</a>
+                    <a class="dropdown-item" href="#section_2">Artist</a>
+                    <a class="dropdown-item" href="#section_3">Customer</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Modify
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="Update.html">Update</a>
+                    <a class="dropdown-item" href="Insert.html">Insert</a>
+                    <a class="dropdown-item" href="delete.html">Delete</a>
+                  </div>
+                </li>
+              </ul>
+          </nav>
+        <div style = "background-image: url('https://i.pinimg.com/564x/9f/5a/21/9f5a2158dee8b0c42a330b6d32b7bed1.jpg'); background-repeat: repeat-x; background-position: center; background-size: contain; ">
+            <div style = "background-color: rgba(133, 133, 133, 0.614);">
+                <div>
+                    <h1 style = "text-align: center; color: rgb(253, 253, 253); padding-top:2%" id = "section_1" >Report ~ Owner</h1>
+                </div>
+                <div class = "container_1" >
+                    <label for="textfield" style = "padding-top:3%">Owner_Number:</label>
+                    <input type="number" id="Owner_No_search" name="textfield" value="Null"><br>
+                    <input type="submit"  class="btn btn-primary" id="submit_Owner" style = "margin-top : 20px"  value = "submit">
+                </div>
+            </div>
+        </div>
+
+        <div style = "background-image: url('https://w7.pngwing.com/pngs/354/1005/png-transparent-low-poly-polygon-texture-blues-abstract-background-big-lingge-blue-and-white-abstract-art-blue-triangle-computer.png'); background-repeat: repeat-x; background-position: center; background-size: contain; ">
+            <div style = "background-color: rgba(133, 133, 133, 0.311);">
+                <div>
+                    <h1 style = "text-align: center; color: rgb(253, 253, 253); padding-top:2%" id = "section_2" >Report ~ Artist</h1>
+                </div>
+                <div class = "container_1" >
+                    <label for="textfield" style = "padding-top:3%; color:black">Artist_Number:</label>
+                    <input type="number" id="Artist_No_Search" name="textfield" value="Null"><br>
+                    <input type="submit"  class="btn btn-primary" id="submit_Artist" style = "margin-top : 20px" value = "submit">
+                </div>
+            </div>
+        </div>
+
+        <div style = "background-image: url('https://www.ajc.com/resizer/lCcmXrDG0u1Vh0v_9L_wPNhsJV0=/814x458/cloudfront-us-east-1.images.arcpublishing.com/ajc/QJ5SBDXZQFANXONWHLZIFEZ3GI.jpg'); background-repeat: repeat-x; background-position: center; background-size: contain; ">
+            <div style = "background-color: rgba(133, 133, 133, 0.608);">
+                <div>
+                    <h1 style = "text-align: center; color: rgb(253, 253, 253); padding-top:2%" id = "section_3">Report ~ Customers</h1>
+                </div>
+                <div class = "container_1" >
+                    <label for="textfield" style = "padding-top:3%; color :rgb(255, 255, 255)">Customer_Number:</label>
+                    <input type="number" id="Cus_No_Search" name="textfield" value="Null"><br>
+                    <input type="submit"  class="btn btn-primary" id="submit_Cus" style = "margin-top : 20px"  value = "submit">
+                </div>
+            </div>
+        </div>
+
+        
+    </body>
+    <script src = "\controller\front_end_Controller.js"></script>
+</html>

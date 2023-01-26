@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+      .container {
+      width: 50%; /* specify the width of the container */
+      height: 100%; /* specify the height of the container */
+      align-items: center; /* center the container vertically within the parent element */
+      justify-content: center; /* center the container horizontally within the parent element */
+      }
+      .form-control {
+        width: 100%;
+      }
+      .id {
+        margin-left: 40% ;
+        text-align: center;
+      }
+    </style>
+    <!-- <script src = "\controller\front_end_Controller.js"></script> -->
+  </head>
+  
+  
+    <body> 
+      <div class="bg-image" style="background-image: url('https://img.theculturetrip.com/768x/smart/wp-content/uploads/2019/08/adn-galeria.jpg');  background-repeat : no-repeat; background-size: cover;">
+      <div class="container mt-5" style = "padding-top: 15%;" >
+        <h1 style = "text-align: center; color: rgb(12, 12, 12);">Login</h1>
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" class="form-control" id="username" name="username">
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" id="password" name="password">
+          </div>
+          <div>
+          <label for="As_Admin">As Admin:</label>
+          <input type="checkbox" id="As_Admin" name="As_Admin">
+          </div>
+          <input type="submit" class="btn btn-primary" id = "login_button" value="Submit">
+          <div style=" align-self:baseline; padding-left: 35% ; padding-right: 35% ;" >
+          <label for="new_user">Are You a new user ?</label>
+          </div>
+        <div style=" align-self:baseline; padding-left: 40% ; padding-right: 40% ;" >
+          <input type="submit" class="btn btn-primary" onclick = "location.href = 'sign_up.html'"  value="Sign-Up">
+        <div>
+      </div>
+      </div>
+    </body>
+  <script src = "\controller\front_end_Controller.js">
+        
+  </script>
+  
+</html>
