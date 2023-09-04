@@ -1,16 +1,16 @@
 const express = require('express');
 const app = express();
 // import {Search_with_condition,generate_report_c,generate_report_a,generate_report_o} from './searching';
-const searching = require('./controller/searching');
-const modify = require('./controller/modify.js')
-const bodyParser = require('body-parser');
+// const searching = require('./controller/searching');
+// const modify = require('./controller/modify.js')
+// const bodyParser = require('body-parser');
 // const cors = require('cors');
-const path = require('path');
+// const path = require('path');
 
 
 
 // app.use(cors({origin: 'http://localhost:3000'}));
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
 
 
 app.get('/', (req, res) => {
@@ -189,3 +189,5 @@ app.get('/', (req, res) => {
 app.listen(4000, () => {
   console.log('Server listening on port 4000');
 });
+
+module.exports = app
