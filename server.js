@@ -13,7 +13,7 @@ app.use(cors({origin: 'http://localhost:3000'}));
 app.use(bodyParser.json());
 
 
-app.get('/', (req, res) => {
+app.get('/home', (req, res) => {
   // const parent = path.resolve(__dirname, '..');
   // console.log(parent);
   // res.sendFile( parent+ '/View/login.html');
