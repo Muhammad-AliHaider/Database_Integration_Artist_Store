@@ -4,12 +4,12 @@ const app = express();
 const searching = require('./controller/searching');
 const modify = require('./controller/modify.js')
 const bodyParser = require('body-parser');
-const cors = require('cors');
+// const cors = require('cors');
 const path = require('path');
 
 
 
-app.use(cors({origin: 'http://localhost:3000'}));
+// app.use(cors({origin: 'http://localhost:3000'}));
 app.use(bodyParser.json());
 
 
@@ -186,6 +186,6 @@ app.get('/', (req, res) => {
 
 
 
-app.listen(3000, () => {
-  console.log('Server listening on port 3000');
+app.listen(4000, () => {
+  console.log('Server listening on port 4000');
 });
