@@ -5,7 +5,7 @@ const app = express();
 // const modify = require('./controller/modify.js')
 const bodyParser = require('body-parser');
 // const cors = require('cors');
-const path = require('path');
+// const path = require('path');
 
 
 
@@ -14,8 +14,8 @@ app.use(bodyParser.json());
 
 
 app.get('/', (req, res) => {
-  const parent = path.resolve(__dirname, '..');
-  console.log(parent);
+  // const parent = path.resolve(__dirname, '..');
+  // console.log(parent);
   res.sendFile( './View/login.html');
   // res.status(200).json('Welcome, your app is working well');
 });
