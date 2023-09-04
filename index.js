@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 app.get('/', (req, res) => {
   const parent = path.resolve(__dirname, '..');
   console.log(parent);
-  res.sendFile( parent+ '/View/login.html');
+  res.sendFile( './View/login.html');
   // res.status(200).json('Welcome, your app is working well');
 });
 
