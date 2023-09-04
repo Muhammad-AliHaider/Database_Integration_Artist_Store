@@ -3,14 +3,14 @@ const app = express();
 // import {Search_with_condition,generate_report_c,generate_report_a,generate_report_o} from './searching';
 // const searching = require('./controller/searching');
 // const modify = require('./controller/modify.js')
-// const bodyParser = require('body-parser');
+const bodyParser = require('body-parser');
 // const cors = require('cors');
 // const path = require('path');
 
 
 
 // app.use(cors({origin: 'http://localhost:4000'}));
-// app.use(bodyParser.json());
+app.use(bodyParser.json());
 
 
 app.get('/', (req, res) => {
